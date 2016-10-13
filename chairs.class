@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class chairs{
+	public static void main(String[] argv){
+	System.out.println(" ");
+	Scanner stdin = new Scanner(System.in);
+	int r = stdin.nextInt();
+	int children;
+	int chairs;
+	for(int i = 1; i < r + 1; i++){
+		children = stdin.nextInt();
+		chairs = stdin.nextInt();
+		if(chairs < 0 || children < 0){
+			System.out.println("Error. Invalid input");
+		}
+		else{
+		System.out.println("Round "+i+": "+(children-chairs)+" eliminated");
+		}
+	}
+	
+	}
+
+}
